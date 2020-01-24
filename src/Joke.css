@@ -1,0 +1,101 @@
+.Joke {
+  display: flex;
+  border-bottom: 2px solid #eee;
+  padding: 1rem;
+}
+
+.Joke-vote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.2rem;
+}
+
+.Joke-text {
+  flex-grow: 1;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+.Joke span {
+  border: 3px solid;
+  font-weight: 300;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  box-shadow: 0 10px 38px rgba(0,0,0, .2), 0 10px 12px rgba(0,0,0, .1);
+}
+
+.Joke .fas {
+  font-size: 1.5em;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.Joke-smiley {
+  font-size: 3rem;
+  height: auto;
+  widows: auto;
+  border-radius: 50%;
+  box-shadow: 0 10px 38px rgba(0,0,0, .2), 0 10px 12px rgba(0,0,0, .1);
+  margin-left: 1.2rem;
+}
+
+.Joke-smiley:hover {
+  animation: spin .7s ease-in-out;
+}
+
+.loader, .loader h1 {
+  color: #8b66cb;
+  text-align: center;
+}
+
+.fa-arrow-up:hover {
+  transition: all .1s;
+  animation: jump-up .7s ease-out;  
+  color: #8bc34a;
+}
+
+.fa-arrow-down:hover {
+  transition: all .1s;
+  animation: jump-down .7s ease-out; 
+  color: #f44336;
+}
+
+@keyframes jump-up {
+  0%, 50%, 100% {transform: translateY(0);}
+  25%, 75% {transform: translateY(-3px);}
+}
+
+@keyframes jump-down {
+  0%, 50%, 100% {transform: translateY(0);}
+  25%, 75% {transform: translateY(3px);}
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  30% {
+    transform: rotate(20deg);
+  }
+
+  60% {
+    transform: rotate(0deg);
+  }
+
+  80% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+

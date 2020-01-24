@@ -1,0 +1,90 @@
+.JokesList {
+  display: flex;
+  width: 80%;
+  height: 80%;
+}
+
+.JokesList-sidebar {
+  text-align: center;
+  background-color: #9575cd;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 19px 38px rgba(0,0,0, .3), 0 15px 12px rgba(0,0,0, .1), inset 0 0 25px #7e57c2;
+  z-index: 1;
+}
+
+.JokesList-title {
+  font-size: 4rem;
+  font-weight: 300;
+  color: white;
+  margin:2rem;
+  letter-spacing: .6rem;
+}
+
+.JokesList-title span {
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+.JokesList img {
+  width: 50%;
+  box-shadow: 0 19px 38px rgba(0,0,0, .3), 0 15px 12px rgba(0,0,0, .1), inset 0 0 25px #7e57c2;
+  border-radius: 50%;
+}
+
+.JokesList img:hover {
+  animation: laugh .8s ease-in-out infinite;
+} 
+
+.JokesList-jokes {
+  background-color: white;
+  height: 90%;
+  align-self: center;
+  overflow: auto;
+  width: 70%;
+  box-shadow: 0 19px 38px rgba(0,0,0, .3), 0 15px 12px rgba(0,0,0, .1);
+}
+
+
+.JokesList-btn{
+  border: 1px solid grey;
+  font-size: 1.4rem;
+  width: 56%;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  color: white;
+  font-weight: 700;
+  margin: 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, rgb(179, 229, 252) 50%, rgb(240, 98, 146) 50%);
+  box-shadow: 0 10px 38px rgba(0,0,0, .2), 0 10px 12px rgba(0,0,0, .1);
+  word-spacing: .2rem;
+  transition: all .8s cubic-bezier(.2, 1, .2, 1);  
+}
+
+.JokesList-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(0,0,0, .25);
+} 
+
+
+
+
+@keyframes laugh {
+	0% { transform: translate(2px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(0px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(2px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(2px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
